@@ -80,8 +80,8 @@ if __name__ == "__main__":
     Distributed on an "AS IS" basis without warranties or conditions of any kind, either express or implied.
 
     Produce a plot of the contribution of the positions of a sequence. 
-    The contributions are 
-    A threshold is set to select only the positions above it. 
+    From a CSV file (semi colon separated) of the positions and the contributions percentage, a plot is created for 
+    the positions above a threshold. 
     """
     parser = argparse.ArgumentParser(description=descr, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("-o", "--out", required=True, type=str, help="the path to the output plot.")
